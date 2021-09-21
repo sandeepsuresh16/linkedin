@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    width: 100%;
+}
 
 .linkedinHeader{
     position: fixed;
@@ -12,13 +15,14 @@
     align-content: center;
     background-color: whitesmoke;
     flex-direction: row;
+    justify-content: space-evenly;
     padding-top: 8px;
     padding-bottom: 8px;
     z-index: 10;
 }
 .linkedinHeader-left{
     display: flex;
-    width: 40%;
+    width: 20%;
     align-content: center;
     flex-direction: row;
     justify-content: center;
@@ -43,16 +47,20 @@
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
+    display: flex;
 }
 .linkedinheader-left-search i{
+    display: flex;
     padding-top: 10px;
     font-size: 15px;
+    padding-right: 10px;
     padding-bottom: 10px;
 }
 .linkedinheader-left-search input{
     border: none;
     font-size: 17px;
     background-color: transparent;
+    outline: none;
 }
 .linkedinHeader-right{
     display: flex;
@@ -132,10 +140,10 @@
 .container{
     display: flex;
     flex-direction: row;
-    padding-top: 150px;
-    padding: 120px;
-    padding-right: 110px;
-    
+    /* padding-top: 150px; */
+    padding-left: 120px;
+    padding-top: 120px;
+    padding-right: 0px;    
     width: 100%;
     min-height: 100vh;
     background-color: #ececec
@@ -171,7 +179,7 @@
 .sub-left-row1-head-image{
     position: relative;
     top: 20px;
-    left: 100px;
+    left: 75px;
     width: 70px;
     height: 70px;
     border: 3px solid white;
@@ -298,12 +306,13 @@
 
 }
 .status-post-input input{
-    width: 460px;
+    width: 175%;
     height: 50px;
     font-size: 15px;
     margin-top: 0;
     padding-left: 20px;
     border-radius: 50px;
+    border: 2px solid lightgray;
     outline: none;
 }
 .status-post-input input:active{
@@ -357,6 +366,7 @@
     border-bottom: 0.6px solid lightgray;
 }
 .post-card-info span{
+    padding-left: 10px;
     font-size: 13px;
     opacity: 0.5;
 }
@@ -405,6 +415,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 10px;
     padding-bottom: 15px;
     align-content: center;
 }
